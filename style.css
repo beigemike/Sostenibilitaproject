@@ -34,8 +34,6 @@ span a {
   color: cadetblue;
 }
 
-
-
 span a::before {
     content: '';
     position: absolute;
@@ -228,4 +226,28 @@ input #email {
 .sub-art {
   font-family: demibold;
   font-size: 24px;
+}
+
+.fa-circle {
+  opacity: 24%;
+  font-size: 5px;
+}
+
+.footer {
+  font-family: light;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.error {
+  font-size: 50px;
+  font-family: demibold;
+}
+
+.err-desc {
+  font-family: light;
+  font-size: 22px;
+}
+
+.badge {
+  font-size: 10px;
 }
