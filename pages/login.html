@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilità ambientale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d28fd411e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.webp">
+    <script src="../validate.js"></script>
+</head>
+
+<body class="body1 container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span style="color: #8bb64f;">Sostenibilità</span><span
+                    style="color: #fff;">.project</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/progetto.html">Domande & risposte (FAQ)</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Il progetto
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/mobilita.html">Mobilità</a></li>
+                                <li><a class="dropdown-item" href="../pages/ambiente.html">Ambiente</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/agenda.html">Agenda 2030</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/progetto.html">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/login.html">Login <i
+                                    class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <p style="font-family: med;" class="newsletter">Iscriviti alla newsletter</p>
+                    <p style="font-family: reg;" class="info">No spam - semplicemente i nostri articoli e news relative
+                        al progetto spedite alla tua casella di posta elettronica. Disiscriviti quando vuoi.</p>
+                    <form id="email " class="d-flex mt-3" autocomplete="off">
+                        <input class="form-control me-2 inputBox" id="emailID" name="email" type="email"
+                            placeholder="Inserisci qui la tua e-mail" aria-label="InserisciLaTuaMail"
+                            onkeyup="emailValidate(this)">
+                        <button class="btn btn-outline-dark" type="button" id="validate" onclick="signUp()"
+                            value="SignUp" disabled>Iscriviti</button>
+                    </form>
+                    <span id="emailID_check"></span>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <section class="container-login">
+        <div class="login shadow">
+            <h1 class="text-center">Ben tornato.</h1>
+
+            <form class="needs-validation" autocomplete="off">
+                <div class="form-group was-validated">
+                    <label class="form-label" for="email">Indirizzo email</label>
+                    <input class="form-control" type="email" id="email" required>
+                    <div class="invalid-feedback">
+                        Per favore inserisci il tuo indirizzo email
+                    </div>
+                </div>
+
+                <div class="form-group was-validated">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password" required>
+                    <div class="invalid-feedback">
+                        Per favore inserisci la tua password
+                    </div>
+                </div>
+
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="check">
+                    <label class="form-check-label" for="check">Ricordami</label>
+                </div>
+
+                <input class="btn btn-outline-success w-100" type="submit" value="Entra">
+            </form>
+        </div>
+    </section>

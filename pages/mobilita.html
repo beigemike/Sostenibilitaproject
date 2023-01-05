@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilità ambientale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d28fd411e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.webp">
+    <script src="../validate.js"></script>
+</head>
+
+<body class="body2">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-top shadow-sm mask-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span style="color: #8bb64f;">Sostenibilità</span><span
+                    style="color: #212529;">.project</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/progetto.html">Domande & risposte (FAQ)</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Il progetto
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/mobilita.html">Mobilità</a></li>
+                                <li><a class="dropdown-item" href="../pages/ambiente.html">Ambiente</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/agenda.html">Agenda 2030</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/progetto.html">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/login.html">Login <i
+                                    class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <p style="font-family: med;" class="newsletter">Iscriviti alla newsletter</p>
+                    <p style="font-family: reg;" class="info">No spam - semplicemente i nostri articoli e news relative
+                        al progetto spedite alla tua casella di posta elettronica. Disiscriviti quando vuoi.</p>
+                    <form id="email " class="d-flex mt-3" autocomplete="off">
+                        <input class="form-control me-2 inputBox" id="emailID" name="email" type="email"
+                            placeholder="Inserisci qui la tua e-mail" aria-label="InserisciLaTuaMail"
+                            onkeyup="emailValidate(this)">
+                        <button class="btn btn-outline-dark" type="button" id="validate" onclick="signUp()"
+                            value="SignUp" disabled>Iscriviti</button>
+                    </form>
+                    <span id="emailID_check"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <section class="section-2">
+        <div class="title2">Mobilità sostenibile <i class="fa-solid fa-newspaper"></i> <span
+                style="font-size: 18px; font-family: reg; opacity: 24%;">29 dicembre 2022 - di Edoardo Conforto</span>
+        </div><br>
+        <div class="subtitle2">
+            <span class="sub-art">La mobilità sostenibile riduce l'inquinamento e consente il risparmio energia.
+                Analizziamola insieme.</span><br><br>
+            Spostarsi in bicicletta o in monopattino (e, se possibile, a piedi), preferire l’auto ibrida o elettrica a
+            quella a benzina, utilizzare il trasporto pubblico, ricorrere alla condivisione di veicoli (bici, scooter,
+            autovetture) ma anche poter usare in modo integrato vari mezzi per il percorso quotidiano in un percorso
+            fluido, conveniente e senza ostacoli di sorta: sono alcuni dei comportamenti che caratterizzano la mobilità
+            sostenibile nelle città, un concetto di cui si è cominciato a parlare negli anni Novanta e che sta
+            diventando di estrema attualità negli ultimi anni. Anche perché i centri urbani sono sempre più
+            congestionati e inquinati. E in Italia il settore dei trasporti è responsabile di circa un quarto delle
+            emissioni in grado di alterare il clima.
+            <br><br>
+            <b>Mobilità sostenibile</b> sta a indicare un modo di muoversi legato indissolubilmente al concetto
+            di <b>sostenibilità territoriale</b> e orientato, quindi, verso la riduzione dei rischi di inquinamento e del
+            potere inquinante, la salvaguardia della salute e dello spazio pubblico come bene comune, il risparmio
+            energetico.
+
+            Muoversi in modo sostenibile significa anche utilizzare tecnologie per strade e autostrade connesse (smart
+            road) che garantiscano fluidità, efficienza e sicurezza negli spostamenti. E comprende il concetto
+            di mobilità integrata: l’utente deve poter usufruire di vari mezzi di trasporto (servizi pubblici, in
+            sharing, privati) senza soluzione di continuità, per completare il percorso quotidiano agevolmente e in modo
+            conveniente. L’argomento non riguarda solo i grandi centri, ma l’insieme delle strutture e infrastrutture
+            relative alla mobilità nel nostro Paese.
+
+            Obiettivo della mobilità sostenibile, secondo la definizione riportata nella strategia europea in materia di
+            sviluppo sostenibile approvata nel 2006 dal Consiglio Europeo, è garantire che i sistemi di trasporto
+            corrispondano ai bisogni economici, sociali e ambientali della società, minimizzandone contemporaneamente le
+            ripercussioni negative sull’economia, la società e l’ambiente.
+            <span class="domanda"></span>
+        </div>
+    </section>

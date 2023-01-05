@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilità ambientale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d28fd411e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.webp">
+    <script src="../validate.js"></script>
+</head>
+
+<body class="body2">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-top shadow-sm mask-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span style="color: #8bb64f;">Sostenibilità</span><span
+                    style="color: #212529;">.project</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/progetto.html">Domande & risposte (FAQ)</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Il progetto
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/mobilita.html">Mobilità</a></li>
+                                <li><a class="dropdown-item" href="../pages/ambiente.html">Ambiente</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/agenda.html">Agenda 2030</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/progetto.html">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/login.html">Login <i
+                                    class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <p style="font-family: med;" class="newsletter">Iscriviti alla newsletter</p>
+                    <p style="font-family: reg;" class="info">No spam - semplicemente i nostri articoli e news relative
+                        al progetto spedite alla tua casella di posta elettronica. Disiscriviti quando vuoi.</p>
+                    <form id="email " class="d-flex mt-3" autocomplete="off">
+                        <input class="form-control me-2 inputBox" id="emailID" name="email" type="email"
+                            placeholder="Inserisci qui la tua e-mail" aria-label="InserisciLaTuaMail"
+                            onkeyup="emailValidate(this)">
+                        <button class="btn btn-outline-dark" type="button" id="validate" onclick="signUp()"
+                            value="SignUp" disabled>Iscriviti</button>
+                    </form>
+                    <span id="emailID_check"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+    <section class="section-2">
+        <div class="title2">Domande & risposte <i class="fa-solid fa-link"></i></div><br>
+        <div class="subtitle2">
+            <i class="fa-solid fa-circle-question"></i><span class="domanda"> Che cos'è la sostenibilità
+                ambientale?</span><br>
+            Con questo termine si intende la condizione di uno sviluppo in grado di assicurare il soddisfacimento dei
+            bisogni della generazione presente, senza compromettere la possibilità delle generazioni future di
+            realizzare i propri. Ciò indica il processo di cambiamento nel quale lo sfruttamento delle risorse, il piano
+            degli investimenti, l'orientamento dello sviluppo tecnologico e le modifiche istituzionali sono tutti in
+            sintonia e valorizzano il potenziale attuale e futuro al fine di far fronte ai bisogni e alle aspirazioni
+            dell'uomo. Per rendere il Pianeta più sostenibile dal punto di vista ambientale occorre mettere in pratica
+            una serie di strategie (che abbiamo trattato in alcuni nostri articoli, ad esempio <span><a
+                    href="../pages/ambiente.html">qui<i class="fa-solid fa-arrow-up-right-from-square"
+                        style="font-size: 9px; font-style: italic;"></i></a></span>.)<br><br>
+            <i class="fa-solid fa-circle-question"></i><span class="domanda"> Quale paese in Europa detiene il record
+                per
+                il maggiore consumo di acqua in
+                bottiglia?</span><br>
+            L'Italia. L'anno scorso nel nostro paese sono stati consumati 196 litri d'acqua imbottigliata per abitante:
+            <b>6 miliardi di bottiglie di plastica</b> in tutto. Un primato di cui non andare particolarmente fieri -
+            l'acqua
+            del rubinetto è in genere di qualità eccellente e sicura - che fa dello Stivale la terza nazione al mondo
+            per consumo di minerale, dopo Arabia Saudita e Messico.<br><br>
+            <i class="fa-solid fa-circle-question"></i><span class="domanda"> Quanti litri d'acqua occorrono per
+                produrre
+                una T-shirt di cotone?</span><br>
+            2700. Secondo il rapporto "Quant'acqua sfruttiamo" redatto dal Sustainable Europe Research Institute, la
+            produzione di una singola T-shirt richiede un'ingente quantità d'acqua a causa della catena di processi
+            industriali che deve attraversare prima di raggiungere il bancone di un negozio, tra cui raccolta del
+            cotone, cardatura, filatura, tessitura e candeggio.<br><br>
+            <i class="fa-solid fa-circle-question"></i><span class="domanda"> Che cos'è l'impronta ecologica?</span><br>
+            L'impronta ecologica è un indicatore complesso utilizzato per valutare il consumo umano di risorse naturali
+            rispetto alla
+            capacità della Terra di rigenerarle. Da alcuni studi effettuati su una scala mondiale e su alcuni paesi
+            emerge che l'impronta mondiale è maggiore della capacità bioproduttiva mondiale.
+            Secondo uno studio, nel 1961 l'umanità usava il 70% della capacità globale della biosfera, ma nel 1999 era
+            arrivata al 120%.
+
+            Ciò significa che stiamo consumando le risorse più velocemente di quanto potremmo, cioè che stiamo
+            intaccando il capitale naturale e che nel futuro potremo disporre di meno materie prime per i nostri
+            consumi.<br><br>
+            <i class="fa-solid fa-circle-question"></i><span class="domanda"> Che cos'è l'Agenda 2030?</span><br>
+            L’Agenda 2030 per lo Sviluppo Sostenibile è un programma d’azione per le persone, il pianeta e la prosperità
+            sottoscritto nel settembre 2015 dai governi dei 193 Paesi membri dell’ONU. Essa ingloba 17 Obiettivi per lo
+            Sviluppo Sostenibile in un grande programma d’azione per un totale
+            di 169 ‘target’ o traguardi. L’avvio ufficiale degli Obiettivi per lo Sviluppo Sostenibile ha coinciso con
+            l’inizio del 2016, guidando il mondo sulla strada da percorrere nell’arco dei prossimi 15 anni: i Paesi,
+            infatti, si sono impegnati a raggiungerli entro il 2030.
+        </div>
+    </section>
+</body>
+
+</html>

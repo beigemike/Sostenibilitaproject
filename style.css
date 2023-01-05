@@ -1,0 +1,231 @@
+@font-face {
+    font-family: demibold;
+    src: url(./fonts/demibold.ttf);
+}
+
+@font-face {
+    font-family: med;
+    src: url(./fonts/med.ttf);
+}
+
+@font-face {
+    font-family: meditalic;
+    src: url(./fonts/med-ita.ttf);
+}
+
+@font-face {
+    font-family: reg;
+    src: url(./fonts/reg.ttf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(./fonts/bold.ttf);
+}
+
+@font-face {
+  font-family: light;
+  src: url(./fonts/light.ttf);
+}
+
+span a {
+  position: relative;
+  text-decoration: none;
+  color: cadetblue;
+}
+
+
+
+span a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: cadetblue;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+span a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+body {
+    user-select: none;
+    font-family: med;
+}
+
+.mask-custom {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+.body1 {
+    background-image: url(./img/sa23.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-1 {
+    display: flex;
+    font-size: 36px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title1 {
+    font-size: 36px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.subtitle1 {
+    font-size: 30px;
+    font-family: reg;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bg-body-tertiary {
+  backdrop-filter: blur(4px) !important;
+  background-color: transparent !important;
+  --bs-bg-opacity: 0;
+}
+
+.shadow-sm {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.offcanvas-header {
+  font-family: reg;
+}
+
+.offcanvas-body {
+  font-family: reg;
+}
+
+.errorCheck {
+  color: red;
+}
+
+.okCheck {
+  color: #198754;
+}
+
+.newsletter {
+  margin-bottom: 0px;
+}
+
+.testo {
+  margin-top: 120px;
+  margin-left: auto;
+  text-align: start;
+  font-family: reg;
+}
+
+.section-2 {
+  margin-right: 7.9vw;
+  margin-left: 7.9vw;
+  font-family: reg;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.fa-link {
+  font-size: 18px;
+  opacity: 24%;
+}
+
+.fa-newspaper {
+  font-size: 18px;
+  opacity: 24%;
+}
+
+.fa-circle-question {
+  font-size: 16px;
+  opacity: 24%;
+}
+
+.fa-arrow-right-to-bracket {
+  font-size: 11px;
+}
+
+.title2 {
+  font-family: bold;
+  font-size: 34px;
+}
+
+.subtitle2 {
+  font-size: 18px;
+  font-family: light;
+}
+
+.domanda {
+  font-size: 20px;
+  font-family: demibold;
+}
+
+b {
+  font-family: reg;
+}
+
+.container-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+  width: 360px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.login h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: demibold;
+}
+
+.login form {
+  font-size: 20px;
+  font-family: light;
+}
+
+.login form .form-group {
+  margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: demibold;
+}
+
+input #email {
+  background-color: none !important;
+}
+
+.blur {
+  backdrop-filter: blur(4px);
+}
+
+.sub-art {
+  font-family: demibold;
+  font-size: 24px;
+}
