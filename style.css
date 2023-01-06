@@ -1,31 +1,37 @@
 @font-face {
     font-family: demibold;
     src: url(./fonts/demibold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: med;
     src: url(./fonts/med.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: meditalic;
     src: url(./fonts/med-ita.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: reg;
     src: url(./fonts/reg.ttf);
+    font-display: swap;
 }
 
 @font-face {
   font-family: bold;
   src: url(./fonts/bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: light;
   src: url(./fonts/light.ttf);
+  font-display: swap;
 }
 
 span a {
